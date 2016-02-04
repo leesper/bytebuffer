@@ -1,0 +1,8 @@
+[package]
+name = "byte_buffer"
+version = "0.0.1"
+authors = [ "Leesper" ]
+
+[lib]
+name = "byte_buffer"
+test = true
