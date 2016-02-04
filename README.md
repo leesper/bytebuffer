@@ -2,7 +2,7 @@
 
 Buffer is an application-layer byte buffer designed to be used in asynchronous network applications.
 
-Here is how you read first a single bit, then three bits and finally four bits from a byte buffer:
+Here is how you append and retreive from a byte buffer:
 
     fn test_append_retrieve() {
         let mut buf: Buffer = Buffer::new(None);
@@ -41,9 +41,9 @@ You can find more examples in the unit test code.
 
 This is a byte buffer class modeled after muduo::net::Buffer
 
-+-------------------+------------------+------------------+
-| prependable bytes |  readable bytes  |  writable bytes  |
-|                   |     (CONTENT)    |                  |
-+-------------------+------------------+------------------+
-|                   |                  |                  |
-0      <=      readerIndex   <=   writerIndex    <=     size
++-------------------+------------------+------------------+<br>
+| prependable bytes |  readable bytes  |  writable bytes  |<br>
+|                   |     (CONTENT)    |                  |<br>
++-------------------+------------------+------------------+<br>
+|                   |                  |                  |<br>
+0      <=      readerIndex   <=   writerIndex    <=     size<br>
