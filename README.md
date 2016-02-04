@@ -1,6 +1,6 @@
 # Buffer
 
-Buffer is an application-layer byte buffer designed to be used in asynchronous network applications.
+Buffer is an application-layer byte buffer designed to be used in asynchronous network applications. You can find more examples in the unit test code. This is a byte buffer class modeled after muduo::net::Buffer.
 
 Here is how you append and retreive from a byte buffer:
 
@@ -37,13 +37,3 @@ Here is how you append and retreive from a byte buffer:
         assert_eq!(buf.prependable_bytes(), PREPEND);
     }
 
-You can find more examples in the unit test code.
-
-This is a byte buffer class modeled after muduo::net::Buffer
-
-+-------------------+------------------+------------------+<br>
-| prependable bytes |  readable bytes  |  writable bytes  |<br>
-|                   |     (CONTENT)    |                  |<br>
-+-------------------+------------------+------------------+<br>
-|                   |                  |                  |<br>
-0      <=      readerIndex   <=   writerIndex    <=     size<br>
