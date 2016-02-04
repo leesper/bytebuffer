@@ -1,8 +1,8 @@
 [package]
-name = "byte_buffer"
+name = "bytebuffer"
 version = "0.0.1"
 authors = [ "Leesper" ]
 
 [lib]
-name = "byte_buffer"
+name = "bytebuffer"
 test = true

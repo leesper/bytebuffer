@@ -31,7 +31,7 @@ impl Buffer {
 	/// # Examples
 	/// 
 	/// ```
-	/// use rio::net::Buffer;
+	/// use bytebuffer::Buffer;
 	///
 	/// let mut buf = Buffer::new(None);
 	/// ```
@@ -364,7 +364,9 @@ impl Buffer {
 }
 
 mod tests {
+	#[allow(unused_imports)]
 	use super::*;
+	#[allow(unused_imports)]
 	use std::mem;
 	
 	#[test]
